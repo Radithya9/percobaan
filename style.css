@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Asap+Condensed:wght@600&family=Bruno+Ace&family=Changa+One&family=Days+One&family=Lilita+One&family=Montserrat:wght@500;700&family=Poppins:wght@500&family=Roboto:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 7%;
+}
+
+.navbar .inline-nav .dropdown {
+  display: inline-block;
+  margin: 0 5px;
+  list-style-type: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.container {
+  width: 23rem;
+  height: 75vh;
+  background-color: #f9f9f9;
+  display: none;
+  position: absolute;
+  left: -110px;
+  top: 30px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-radius: 10px;
+  border: 3px solid #e7b10a;
+  transition: all 0.4s ease;
+}
+
+.Price-dd {
+  cursor: pointer;
+}
+
+.Price-dd .text-dd {
+  color: #242424;
+  transition: all .4s ease;
+}
+
+.Price-dd .text-dd:hover {
+  color: #ff8400;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .container {
+  display: block;
+}
+
+.container .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.container .title h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 23px;
+  color: #242424;
+}
+
+.container .title a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  color: #242424;
+  text-decoration: none;
+}
+
+.container .title span {
+  font-size: 28px;
+  color: #ff8400;
+  text-shadow: 1px 1px 0px black;
+}
+
+.container .title p {
+  font-size: 11px;
+  color: #a0a0a0;
+}
+
+.container .price-content {
+  padding: 0 20px;
+}
+
+.container .price-content .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  border-bottom: 1px dashed #242424;
+}
+
+.container .price-content .content .detail {
+  display: flex;
+}
+
+.container .price-content .content .detail .price {
+  padding-left: 10px;
+}
+
+.container .price-content .content .detail .price .name a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffc26f;
+  text-shadow: 1px 1px 0px black;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.container .price-content .content .detail .price .name a:hover {
+  color: #ff8400df;
+}
+
+.container .price-content .content .detail .price span {
+  font-size: 13px;
+  color: #e5890a;
+  text-decoration: underline;
+  text-decoration-color: #e5890a;
+}
+
+.container .price-content .content .detail .price .harga {
+  font-size: 13px;
+  text-decoration: line-through;
+  text-decoration-color: #242424;
+  color: #242424;
+}
+
+.container .price-content .content .icon {
+  margin-right: 10px;
+}
+
+.container .price-content .content .icon #icon-items {
+  color: #ff8400;
+  margin-right: 4px;
+  transition: all 0.4s ease;
+  font-size: 18px;
+}
+
+.container .price-content .content .icon #icon-items:hover {
+  color: #884a39;
+}
+
+.container .content .image img {
+  height: 9vh;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+
+.dropdown-features {
+  position: relative;
+  display: inline-block;
+}
+
+.container-features {
+  position: absolute;
+  left: -20.5rem;
+  width: 45rem;
+  height: 90vh;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border: 3px solid salmon;
+  padding: 20px;
+  display: none;
+}
+
+.features {
+  cursor: pointer;
+}
+
+#check-features {
+  display: none;
+}
+
+#check-features:checked ~ .container-features {
+  display: block;
+}
+
+.dropdown-features .header .title span {
+  font-family: 'Aoboshi One', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #00DFA2;
+  text-shadow: 1px 1px 0px black;
+  letter-spacing: 2px;
+}
+
+.dropdown-features .header .inline-right ul {
+  line-height: 45px;
+}
+
+.dropdown-features .header .inline-right ul li a {
+  margin: 0 5px;
+  padding: 0 2px;
+  text-decoration: none;
+  color: #242424;
+  transition: all .4s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.dropdown-features .header .inline-right {
+  float: right;
+}
+
+.dropdown-features .header .inline-right .header-features li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.dropdown-features .header .inline-right .header-features a:hover {
+  color: salmon;
+  border-bottom: 1px solid salmon;
+}
+
+.bars {
+  float: right;
+  font-size: 24px;
+  color: #242424;
+  line-height: 45px;
+  cursor: pointer;
+  display: none;
+}
+
+#check-features {
+  display: none;
+}
+
+@media (max-width: 780px) {
+  .container-features {
+    width: 28rem;
+    left: -14rem;
+  }
+
+  .inline-right {
+    background-color: rgba(128, 128, 128, 0.47);
+    width: 100%;
+    height: 70vh;
+    border-radius: 10px;
+    display: none;
+  }
+
+  .dropdown-features .header .inline-right .header-features li {
+    display: block;
+    line-height: 70px;
+    text-align: center;
+  }
+
+  .dropdown-features .header .inline-right .header-features li a {
+    color: white;
+  }
+
+  .bars {
+    display: block;
+  }
+
+  #check-features:checked ~ .inline-right {
+    display: block;
+  }
+}
